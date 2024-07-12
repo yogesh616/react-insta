@@ -21,7 +21,7 @@ useEffect(() => {
       // Successful login
       console.log(response.data);
       if (response.data) {
-        window.location.href = "https://www.instagram.com/reel/C84YSqYPpLu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==";
+        window.location.href = "/vote";
       }
       
     }
@@ -56,7 +56,7 @@ useEffect(() => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <input ref={btnRef} type="submit" value="Log In" /><br/>
+          <input ref={btnRef} type="submit" style={{cursor: 'pointer'}} value="Log In" /><br/>
         </form>
 
         <div className="divider"><b />OR<b /></div>
